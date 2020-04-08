@@ -13,16 +13,19 @@
     </nav>
     <div class="container">
       <router-view />
+      <i18n></i18n>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import SelectLang from "@/components/SelectLang.vue";
+import HelloI18n from "@/components/HelloI18n.vue";
 
 @Component({
   components: {
-    selectLanguage: SelectLang
+    selectLanguage: SelectLang,
+    i18n: HelloI18n
   }
 })
 export default class App extends Vue {}
